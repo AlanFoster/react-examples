@@ -15,4 +15,4 @@ services:
       context: .
     environment:
       - CI=true
-    command: npm test
+    command: npm test && npm lint
