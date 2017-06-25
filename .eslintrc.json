@@ -6,7 +6,10 @@
   },
   "extends": [
     "eslint:recommended",
-    "plugin:react/recommended"
+    "plugin:react/recommended",
+    "prettier",
+    "prettier/flowtype",
+    "prettier/react"
   ],
   "parserOptions": {
     "ecmaFeatures": {
@@ -17,7 +20,8 @@
   },
   "plugins": [
     "react",
-    "jest"
+    "jest",
+    "prettier"
   ],
   "settings": {
     "react": {
@@ -45,6 +49,12 @@
     ],
     "react/jsx-uses-vars": [
       2
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true
+      }
     ]
   }
 }
