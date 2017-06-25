@@ -17,3 +17,4 @@ services:
       context: .
     environment:
       - CI=true
+    command: ["/bin/sh", "-c", "npm run test && npm run lint"]
