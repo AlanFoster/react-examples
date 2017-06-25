@@ -14,4 +14,4 @@ dev:  ## Run a development environment on port 3000
 
 test: ## Run the current test suite
 	@docker-compose build test
-	@docker-compose run --rm test
+	@docker-compose run --rm test /bin/sh -c "npm test && npm run lint"

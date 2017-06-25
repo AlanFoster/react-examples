@@ -1,11 +1,10 @@
 import React from 'react';
 import Button from 'components/button';
 
-const ApiCalls = () => (
+const ApiCalls = () =>
   <div>
     <p>page about API calls</p>
     <Button>Call Api</Button>
-  </div>
-);
+  </div>;
 
 export default ApiCalls;

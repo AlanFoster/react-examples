@@ -4,9 +4,7 @@ import renderer from 'react-test-renderer';
 import Home from '../';
 
 it('renders the home texts', () => {
-  const component = renderer.create(
-    <Home />
-  );
+  const component = renderer.create(<Home />);
 
   expect(component).toMatchSnapshot();
 });

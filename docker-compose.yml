@@ -8,11 +8,10 @@ services:
       - 3000:3000
     command: npm start
     volumes:
-      - "./src:/srv/example/src"
+      - "./src:/srv/app/src"
 
   test:
     build:
       context: .
     environment:
       - CI=true
-    command: npm test && npm lint
