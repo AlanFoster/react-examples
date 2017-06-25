@@ -1,9 +1,19 @@
 /* eslint-env browser */
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import {BrowserRouter} from 'react-router-dom'
+import Layout from './layout';
+import Routes from './routes';
 import registerServiceWorker from './registerServiceWorker';
-import './index.css';
+import './styles.css';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const Application = () => (
+  <BrowserRouter>
+    <Layout>
+      <Routes />
+    </Layout>
+  </BrowserRouter>
+);
+
+ReactDOM.render(<Application />, document.getElementById('root'));
 registerServiceWorker();
