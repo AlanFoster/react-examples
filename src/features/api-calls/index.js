@@ -1,8 +1,10 @@
 import React from 'react';
+import Button from 'components/button';
 
 const ApiCalls = () => (
   <div>
-    page about API calls
+    <p>page about API calls</p>
+    <Button>Call Api</Button>
   </div>
 );
 
