@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the translation form 1`] = `
+<div>
+  <form
+    onSubmit={[Function]}
+  >
+    <div
+      className="form-group"
+    >
+      <label
+        className="control-label"
+        htmlFor={undefined}
+      >
+        Translation text
+      </label>
+      <input
+        className="form-control"
+        disabled={true}
+        id={undefined}
+        onChange={[Function]}
+        type="text"
+        value="sentence text"
+      />
+    </div>
+    <button
+      className="btn btn-default"
+      disabled={true}
+      type="submit"
+    >
+      Translate!
+    </button>
+  </form>
+  <div>
+    translation text
+  </div>
+</div>
+`;

@@ -1,33 +1,31 @@
-.App {
-  text-align: center;
-}
-
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
 }
 
 .App-header {
+  text-align: center;
   background-color: #222;
   padding: 20px;
   color: white;
 }
 
-.App-intro {
+.App-content {
   font-size: large;
+  margin: 20px;
 }
 
 .App-navigation a {
-    color: #FFF;
-    padding: 20px;
+  color: #FFF;
+  padding: 20px;
 }
 
 .App-link--selected {
-    color: red;
+  color: red;
 }
 
 .App-navigation a:hover {
-    color: #CCC;
+  color: #CCC;
 }
 
 @keyframes App-logo-spin {

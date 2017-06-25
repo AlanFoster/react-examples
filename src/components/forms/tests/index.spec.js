@@ -1,10 +1,10 @@
 /* eslint-env browser */
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Home from '../';
+import { Button } from '../';
 
-it('renders the api text', () => {
-  const component = renderer.create(<Home />);
+it('renders the button', () => {
+  const component = renderer.create(<Button>Hello world</Button>);
 
   expect(component).toMatchSnapshot();
 });

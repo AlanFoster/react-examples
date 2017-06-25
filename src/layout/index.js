@@ -34,7 +34,7 @@ const App = ({ children }) =>
         </NavLink>
       </nav>
     </div>
-    <div className="App-intro">
+    <div className="App-content">
       {React.Children.only(children)}
     </div>
   </div>;

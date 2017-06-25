@@ -2,7 +2,7 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
 import Home from './features/home';
-import ApiCalls from './features/api-calls';
+import ApiCalls from './features/api-calls/containers';
 
 const Routes = () =>
   <Switch>
