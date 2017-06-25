@@ -3,6 +3,9 @@ sudo: required
 services:
   - docker
 
+before_install:
+- touch .env.local # Docker requires env files to exist
+
 script:
 - make test
 

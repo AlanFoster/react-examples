@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`translation when the translation is a string renders the hello text 1`] = `
+<div>
+  hello
+</div>
+`;
+
+exports[`translation when the translation is an error renders a generic error 1`] = `
+<div>
+  There was an error translating - please try again!
+</div>
+`;
+
+exports[`translation when the translation is not present renders no element 1`] = `null`;
