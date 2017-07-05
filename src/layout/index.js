@@ -26,11 +26,11 @@ const App = ({ children }) =>
         <NavLink
           exact
           activeClassName="App-link--selected"
-          to="/api-calls"
+          to="/yoda-state-example"
           replace
           className="App-link"
         >
-          Api Calls
+          Yoda State Example
         </NavLink>
       </nav>
     </div>
