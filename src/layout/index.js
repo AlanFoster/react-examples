@@ -32,6 +32,16 @@ const App = ({ children }) =>
         >
           Yoda State Example
         </NavLink>
+
+        <NavLink
+          exact
+          activeClassName="App-link--selected"
+          to="/redux-list-example"
+          replace
+          className="App-link"
+        >
+          Redux List Example
+        </NavLink>
       </nav>
     </div>
     <div className="App-content">

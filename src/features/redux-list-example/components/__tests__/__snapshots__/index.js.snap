@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the given repositories 1`] = `
+<div>
+  <h2>
+    Top Repositories
+  </h2>
+  <pre>
+    [
+        {
+            "id": 1,
+            "fullName": "full-name-1",
+            "description": "description-1",
+            "htmlUrl": "html-url-1"
+        },
+        {
+            "id": 2,
+            "fullName": "full-name-2",
+            "description": "description-2",
+            "htmlUrl": "html-url-2"
+        }
+    ]
+  </pre>
+</div>
+`;
