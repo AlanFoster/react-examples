@@ -3,6 +3,16 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import ReduxListExample from '../';
 
+jest.mock('react-virtualized/dist/commonjs/AutoSizer', function() {
+  return function(props) {
+    const renderCallback = props.children;
+
+    return renderCallback({
+      width: 600
+    });
+  };
+});
+
 it('renders the given repositories', () => {
   const repositories = [
     {

@@ -5,21 +5,84 @@ exports[`renders the given repositories 1`] = `
   <h2>
     Top Repositories
   </h2>
-  <pre>
-    [
-        {
-            "id": 1,
-            "fullName": "full-name-1",
-            "description": "description-1",
-            "htmlUrl": "html-url-1"
-        },
-        {
-            "id": 2,
-            "fullName": "full-name-2",
-            "description": "description-2",
-            "htmlUrl": "html-url-2"
+  <div
+    aria-label="grid"
+    className="ReactVirtualized__Grid ReactVirtualized__List repositories"
+    id={undefined}
+    onScroll={[Function]}
+    role="grid"
+    style={
+      Object {
+        "WebkitOverflowScrolling": "touch",
+        "boxSizing": "border-box",
+        "direction": "ltr",
+        "height": 300,
+        "overflowX": "hidden",
+        "overflowY": "hidden",
+        "position": "relative",
+        "width": 600,
+        "willChange": "transform",
+      }
+    }
+    tabIndex={0}
+  >
+    <div
+      className="ReactVirtualized__Grid__innerScrollContainer"
+      style={
+        Object {
+          "height": 140,
+          "maxHeight": 140,
+          "maxWidth": 600,
+          "overflow": "hidden",
+          "pointerEvents": "",
+          "position": "relative",
+          "width": "auto",
         }
-    ]
-  </pre>
+      }
+    >
+      <div
+        className="repositories__row"
+        style={
+          Object {
+            "height": 70,
+            "left": 0,
+            "position": "absolute",
+            "top": 0,
+            "width": "100%",
+          }
+        }
+      >
+        <div>
+          <div>
+            full-name-1
+          </div>
+          <div>
+            description-1
+          </div>
+        </div>
+      </div>
+      <div
+        className="repositories__row"
+        style={
+          Object {
+            "height": 70,
+            "left": 0,
+            "position": "absolute",
+            "top": 70,
+            "width": "100%",
+          }
+        }
+      >
+        <div>
+          <div>
+            full-name-2
+          </div>
+          <div>
+            description-2
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 `;
