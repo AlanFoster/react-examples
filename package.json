@@ -18,6 +18,7 @@
     "eslint": "^4.1.0",
     "eslint-plugin-jest": "^20.0.3",
     "eslint-plugin-react": "^7.1.0",
+    "husky": "^0.14.3",
     "react-scripts": "1.0.7"
   },
   "scripts": {
@@ -25,6 +26,8 @@
     "build": "NODE_PATH=./src react-scripts build",
     "test": "NODE_PATH=./src react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "lint": "eslint src --ignore-pattern \"**/__snapshots__/**\""
+    "lint": "eslint src --ignore-pattern \"**/__snapshots__/**\"",
+    "precommit": "CI=true npm test && npm run lint",
+    "prepush": "CI=true npm test && npm run lint"
   }
 }
