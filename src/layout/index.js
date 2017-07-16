@@ -8,9 +8,7 @@ const App = ({ children }) =>
   <div className="App">
     <div className="App-header">
       <img src={logo} className="App-logo" alt="logo" />
-      <h2 className="App-heading">
-        React tests!
-      </h2>
+      <h2 className="App-heading">React tests!</h2>
 
       <nav className="App-navigation">
         <NavLink
@@ -31,6 +29,16 @@ const App = ({ children }) =>
           className="App-link"
         >
           Yoda State Example
+        </NavLink>
+
+        <NavLink
+          exact
+          activeClassName="App-link--selected"
+          to="/redux-list-example"
+          replace
+          className="App-link"
+        >
+          Redux List Example
         </NavLink>
       </nav>
     </div>
