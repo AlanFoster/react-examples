@@ -12,6 +12,10 @@ class ReduxListExample extends React.PureComponent {
     this.rowRenderer = this.rowRenderer.bind(this);
   }
 
+  componentDidMount() {
+    this.props.getData();
+  }
+
   rowRenderer({ index, key, style }) {
     return (
       <div key={key} style={style} className="repositories__row">
@@ -43,7 +47,8 @@ class ReduxListExample extends React.PureComponent {
 }
 
 ReduxListExample.propTypes = {
-  repositories: PropTypes.arrayOf(RepositoryModel.PropTypes).isRequired
+  repositories: PropTypes.arrayOf(RepositoryModel.PropTypes).isRequired,
+  getData: PropTypes.func.isRequired
 };
 
 export default ReduxListExample;

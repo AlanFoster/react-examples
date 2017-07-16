@@ -1,22 +1,35 @@
-import reducer from '../';
+import reducer, * as actionCreators from '../';
 
 describe('repositories reducer', function() {
   it('returns an initial state', function() {
-    expect(reducer(undefined)).toEqual({
+    expect(reducer(undefined, {})).toEqual({
+      items: []
+    });
+  });
+
+  it('merges the available top repositories on success', function() {
+    const initialState = {
+      items: []
+    };
+
+    const action = actionCreators.getRepositoriesSuccess({
+      repositories: [
+        {
+          id: 1,
+          fullName: 'full-name',
+          description: 'description',
+          htmlUrl: 'html-url'
+        }
+      ]
+    });
+
+    expect(reducer(initialState, action)).toEqual({
       items: [
         {
-          id: 28457823,
-          fullName: 'freeCodeCamp/freeCodeCamp',
-          description:
-            'The https://freeCodeCamp.com open source codebase and curriculum. Learn to code and help nonprofits.',
-          htmlUrl: 'https://github.com/freeCodeCamp/freeCodeCamp'
-        },
-        {
-          id: 2126244,
-          fullName: 'twbs/bootstrap',
-          description:
-            'The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web.',
-          htmlUrl: 'https://github.com/twbs/bootstrap'
+          id: 1,
+          fullName: 'full-name',
+          description: 'description',
+          htmlUrl: 'html-url'
         }
       ]
     });

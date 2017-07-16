@@ -8,9 +8,7 @@ const App = ({ children }) =>
   <div className="App">
     <div className="App-header">
       <img src={logo} className="App-logo" alt="logo" />
-      <h2 className="App-heading">
-        React tests!
-      </h2>
+      <h2 className="App-heading">React tests!</h2>
 
       <nav className="App-navigation">
         <NavLink

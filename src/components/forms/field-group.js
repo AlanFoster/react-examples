@@ -10,9 +10,14 @@ import {
 const FieldGroup = function({ id, label, help, ...props }) {
   return (
     <FormGroup controlId={id}>
-      <ControlLabel>{label}</ControlLabel>
+      <ControlLabel>
+        {label}
+      </ControlLabel>
       <FormControl {...props} />
-      {help && <HelpBlock>{help}</HelpBlock>}
+      {help &&
+        <HelpBlock>
+          {help}
+        </HelpBlock>}
     </FormGroup>
   );
 };

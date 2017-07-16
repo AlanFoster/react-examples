@@ -29,9 +29,12 @@ it('renders the given repositories', () => {
     }
   ];
 
+  const getData = jest.fn();
+
   const component = renderer.create(
-    <ReduxListExample repositories={repositories} />
+    <ReduxListExample repositories={repositories} getData={getData} />
   );
 
   expect(component).toMatchSnapshot();
+  expect(getData).toHaveBeenCalled();
 });

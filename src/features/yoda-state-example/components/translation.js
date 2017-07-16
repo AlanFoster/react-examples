@@ -7,7 +7,11 @@ const Translation = ({ value }) => {
     return <div>There was an error translating - please try again!</div>;
   }
 
-  return <div>{value}</div>;
+  return (
+    <div>
+      {value}
+    </div>
+  );
 };
 
 Translation.propTypes = {
