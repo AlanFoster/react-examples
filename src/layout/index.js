@@ -40,6 +40,16 @@ const App = ({ children }) =>
         >
           Redux List Example
         </NavLink>
+
+        <NavLink
+          exact
+          activeClassName="App-link--selected"
+          to="/apollo-graphql-gifs"
+          replace
+          className="App-link"
+        >
+          Apollo + GraphQL Gifs
+        </NavLink>
       </nav>
     </div>
     <div className="App-content">
