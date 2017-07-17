@@ -7,5 +7,8 @@ export default {
   },
   github: {
     endpoint: 'https://api.github.com'
+  },
+  graphql: {
+    endpoint: 'https://www.graphqlhub.com/graphql'
   }
 };

@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`renders the image list 1`] = `
-<div>
-  hello world!
-</div>
-`;
